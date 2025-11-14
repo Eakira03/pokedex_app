@@ -10,11 +10,13 @@
 
 ##  Detalhando as Funcionalidades
 
-| Funcionalidade | Onde acontece no código? | Descrição |
-| **Listagem Inicial** | `app.js` (função `loadPokemons()`) | Busca os 151 primeiros e renderiza os cards no painel esquerdo. |
-| **Busca** | `app.js` (função `getPokemon()`) | Pega o texto do input e faz a requisição. Se der 404, mostra uma mensagem de erro. |
-| **Detalhes** | `app.js` (função `showDetails()`) | Pega os dados do Pokémon e monta o painel de detalhes (sprite, tipos, habilidades). |
-| **Favoritos** | `app.js` (array `favs[]` e lógica em `showDetails()`) | Adiciona/remove o Pokémon. |
+| Funcionalidade      | Onde acontece no código?                     | Descrição                                                          |
+| ------------------- | -------------------------------------------- | ------------------------------------------------------------------ |
+| **Listagem inicial**| `app.js` (função `loadPokemons()`)          | Busca os 151 primeiros e renderiza os cards no painel esquerdo.     |
+| **Busca**           | `app.js` (função `getPokemon()`)            | Pega o texto do input e faz a requisição. Se der 404, mostra uma mensagem de erro. |
+| **Detalhes**        | `app.js` (função `showDetails()`)           | Pega os dados do Pokémon e monta o painel de detalhes (sprite, tipos, habilidades). |
+| **Favoritos**       | `app.js` (array `favs[]` e lógica em `showDetails()`) | Adiciona/remove o Pokémon.                                |
+
 
 ##  Tecnologias Utilizadas
 
@@ -27,11 +29,16 @@
 
 A estrutura é bem simples, focada no Front-End:
 
-/pokedex
-│── index.html          # A página principal
-│── styles.css          # Todo o estilo (Grid, cards)
-│── app.js              # Toda a lógica JavaScript
+pokedex/
+
+├── index.html      # Página principal
+
+├── styles.css      # Estilos (Grid, cards)
+
+├── app.js          # Lógica JavaScript
+
 └── (assets gerados pela PokeAPI)
+
 ```
 
 ##  Como Rodar o Projeto
