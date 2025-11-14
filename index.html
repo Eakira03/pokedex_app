@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Container geral da aplicação -->
+  <div class="app-shell">
+    
+    <!-- Cabeçalho -->
+    <header class="app-header">
+      <h1 class="app-title">Pokédex</h1>
+      <p class="app-subtitle">Busque, veja detalhes e salve seus pokémons favoritos.</p>
+    </header>
+
+    <!-- Área principal -->
+    <main class="app-main">
+      
+      <!-- Painel esquerdo: busca e resultados -->
+      <section class="left-panel">
+        
+        <!-- Busca -->
+        <div class="search-box">
+          <label for="search-input" class="search-label">Buscar Pokémon (nome ou ID)</label>
+          <div class="search-control">
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              placeholder="ex.: pikachu, 25..."
+            />
+            <button id="search-btn" class="search-btn">Buscar</button>
+          </div>
+        </div>
+
+        <!-- Resultados -->
+        <div class="results-section">
+          <h2 class="section-title">Resultados</h2>
+          <div class="results-list" id="results-list">
+            <p style="font-size:.8rem;color:rgb(0, 0, 0);">Nenhum resultado ainda.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Painel direito: detalhes e favoritos -->
+      <section class="right-panel">
+        
+        <!-- Detalhes -->
+        <div class="details-panel" id="pokemon-details">
+          <h2 class="section-title">Detalhes do Pokémon</h2>
+          <div class="details-content placeholder">
+            <p>Selecione um Pokémon na lista para ver detalhes.</p>
+          </div>
+        </div>
+
+        <!-- Favoritos -->
+        <div class="favorites-panel">
+          <h2 class="section-title">Favoritos</h2>
+          <p class="panel-hint">Pokémons adicionados ficam salvos aqui. Você pode escrever anotações e tags.</p>
+          
+          <div class="favorites-list" id="favorites-list">
+            <p style="font-size:.75rem; color:rgb(0, 0, 0);">Nenhum favorito ainda.</p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="app-footer">
+      <p>Pokédex de estudo — consome <a href="https://pokeapi.co" target="_blank">PokeAPI</a></p>
+    </footer>
+  </div>
+
+  <!-- Script principal -->
+  <script src="app.js"></script>
+</body>
+</html>
